@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   post '/reverse' do
     @rev = params[:string].reverse
-    raise @rev.inspect
+    # raise @rev.inspect
     erb :reversed
   end
 
